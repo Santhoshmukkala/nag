@@ -126,7 +126,7 @@
         }
 
         .section2 {
-            background-image: url('../images/man.png'); /* Replace 'your-image.png' with the path to your PNG file */
+            background-image: url('docs/images/man.png'); /* Replace 'your-image.png' with the path to your PNG file */
             background-size: cover; /* Adjust the background size property as needed */
             background-position: center;
             background-repeat: no-repeat;
