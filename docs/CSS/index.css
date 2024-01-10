@@ -127,7 +127,7 @@
         }
 
         .section2 {
-            background-image: url('../images/man.png');
+            background-image: url('docs/images/man.png');
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
