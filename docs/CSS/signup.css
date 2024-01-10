@@ -1,0 +1,594 @@
+body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background: mintcream;
+
+        }
+   .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: 999; /* Ensure the overlay is behind the popup */
+        }
+         .overlay-success {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: 999; /* Ensure the overlay is behind the popup */
+        }
+
+
+        /* Popup Styles */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px; /* Increase width */
+            height: 500px; /* Increase height */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+            border: 1px solid firebrick;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            text-align: center;
+            color: black;
+            font-family: "Yatra One", sans-serif;
+            z-index: 1000; /* Ensure the popup is on top of other content */
+        }
+
+        .popup-header {
+            background: firebrick;
+            color: white;
+            padding: 10px;
+            border-bottom: 1px solid firebrick;
+        }
+
+        .popup-content {
+            margin-top: 20px;
+        }
+
+        .popup-buttons {
+            margin-top: 20px;
+        }
+
+        .accept-button, .cancel-button
+         {
+            background-color: fireblack;
+            color: maroon;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: solid maroon 2px;
+            border-radius: 5px;
+        }
+        /* Nav bar Css */
+        /* Nav bar Css */
+        .navbar {
+            color: darkgrey;
+            background-color: firebrick;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(57, 31, 186, 0.6);
+            
+        }
+
+      .home {
+           
+            font-size: 30px;
+            color: gold;
+            font-weight: bold;
+        }
+
+        .home:hover
+        {
+            font-size: 30px;
+            color:white;
+        }
+
+            .option1,.option2
+            {
+                color:gold;
+                text-decoration: none;
+                float: right;
+                font-size: 25px;
+                margin-right: 50px;
+                font-family: 'Anton', sans-serif;
+             }
+
+             .option1:hover
+             {
+                color: white;
+             }
+
+             .option2
+             {
+                background: gold;
+                color: maroon;
+                border: 2px maroon solid;
+                padding: 3px;
+                margin-top: -5px;
+             }
+
+        .abt {
+            background-color: firebrick;
+            padding: 50px;
+        }
+           .about-section {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71); /* Colorful gradient background */
+            color: #fff;
+            border-radius: 15px;
+        }
+.groove-text
+{
+            font-size: 45px;
+            font-weight: bold;
+            color: #ccc8c8;
+            margin-top: 10px;
+            text-align: center;
+            padding: 10px;
+            font-family: "Yatra One", sans-serif;
+            background: linear-gradient(to right, firebrick, maroon);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 6px rgba(235, 82, 82, 0.5);
+}
+
+/*form css*/
+.form-outline
+
+{  
+     border-radius: 10px;
+    border: 5px solid firebrick;
+    margin-left:475px;
+    margin-right:475px;
+    padding-top: 15px;
+    padding-bottom:15px; 
+    background:linear-gradient(mintcream,whitesmoke); 
+    box-shadow: 0 4px 8px rgba(115, 128, 183, 0.5);   
+    background-color: rgba(0,205,0, 0.1);
+}
+
+        input[type=text]
+        {
+            height: 25px;
+            width: 120px;
+            border-radius: 8px;
+        }
+
+        input[type=password]
+        {
+            height: 25px;
+             width: 120px;
+            border-radius: 8px;
+        }
+       
+        input::placeholder
+       {
+         color:maroon;
+       }
+    .Namefield
+    {
+    margin-left: 10px;
+    }
+/*form end*/
+    h1 {
+            font-size: 2em;
+            color: dodgerblue;
+        }
+
+    p {
+            font-size: 13px;
+            color: darkred;
+            text-align: justify;
+        }
+
+   .welcome-container 
+   {
+            position: relative;
+            text-align: center;
+            height: 100vh; /* Adjust the height as needed */
+            overflow: hidden;
+    }
+    
+.sb{
+    margin-left: 130px; border-radius: 10px; font-size: 25px; color:forestgreen; font-family:Russo One;
+}
+.rs{
+    margin-left:px; border-radius: 10px; font-size: 25px; color:forestgreen; font-family:Russo One;
+}
+
+
+    .scroll-btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: lightgreen;
+                color: black;
+                text-decoration: none;
+                font-size: 1em;
+                border-radius: 5px;
+                margin-top: 20px;
+                transition: background-color 0.3s ease;
+                cursor: pointer;
+            }
+
+        .scroll-btn:hover {
+            background-color: dodgerblue;
+        }
+
+
+
+        .facebook
+        {
+             margin-left: 550px; text-align: center; font-size: 25px; color: gold;
+        }
+        .instagram,.Email,.linkedin,.telegram
+        {
+            margin-left: 35px; text-align: center; font-size: 25px; color: gold;
+        }
+
+.wave-text
+{
+    font-size: 30px;
+    margin-left: 300px;
+}
+
+.footer
+{
+    color: white; 
+    margin-top: -10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+    @media screen and (max-width: 600px) {
+     
+
+        body {
+            font-size: 14px; 
+        }
+
+        .navbar {
+            padding: 15px;
+        }
+
+        .home {
+            font-size: 30px; 
+        }
+
+        .option1, .option2 {
+            font-size: 18px;
+        }
+
+        .groove-text {
+            font-size: 30px;
+        }
+
+
+        .form-outline {
+            width: 95%; 
+            margin-left: 5px;
+
+            
+        }
+
+        .popup-container {
+         width: 90%; 
+         height: 70%; 
+        }
+
+
+        .welcome-container {
+            height: auto;
+        }
+
+        .scroll-btn {
+            margin-top: 10px; 
+
+        }
+
+  .mobile-hide-label {
+            display: none;
+        }
+
+
+    .mobfn,
+    .mobmn,
+    .mobln {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+
+    .gender-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+ 
+        input[type="text"] {
+            width: 95%; /* Make text input full width on small screens */
+            height: 30px;
+            margin-bottom: 10px; /* Add spacing between phone and gender section */
+        }
+
+        .gender-section {
+            flex-wrap: wrap; /* Allow radio buttons to wrap to the next line if needed */
+        }
+
+        .gender-section input {
+            width: auto; /* Reset width for radio buttons */
+            margin-right: 5px; /* Add spacing between radio buttons */
+        }
+
+          .gender-section label {
+            width: 100%; /* Make gender label full width on small screens */
+            margin-top: 5px; /* Add spacing between gender label and radio buttons */
+        }
+
+
+
+        .form-section label[for="phone"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+        .form-section input[name="phone"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+  
+        .form-section label[for="dob"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+        .form-section input[name="dob"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+        /* Adjust styles for username label and input element */
+        .form-section label[for="username"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+        .form-section input[name="username"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+        /* Adjust styles for password label and input elements */
+        .form-section label[for="password"],
+        .form-section label[for="repassword"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+        .form-section input[name="password"],
+        .form-section input[name="repassword"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+
+
+        .form-section .phone-label,
+        .form-section .phone-input {
+            width: calc(50% - 10px);
+            margin: 5px;
+        }
+ .form-section .gender-label,
+    .form-section .password-label,
+    .form-section .repassword-label {
+        display: none;
+    }
+
+
+    .form-section .gender-input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+  
+    .form-section .password-input,
+    .form-section .repassword-input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+  
+    .form-section .genderlab {
+        display: none;
+    }
+
+   
+    .form-section label[for="dob"] {
+        width: 100%;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .form-section input[name="dob"] {
+        width: 100%;
+        margin: 5px 10px;
+    }
+
+    .form-section input[name="dob"] {
+        width: 100%;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+
+    .form-section .password-label,
+    .form-section .repassword-label {
+        display: none;
+    }
+
+        .form-section .dobcls {
+        width: 90%; /* Set the width as needed */
+        margin: 0 10px; /* Center the element */
+        font-size: 16px; /* Adjust the font size */
+    }
+
+.sb{
+    margin-left:20px; border-radius: 10px; font-size: 30px; color:forestgreen;  margin-top:10px;font-family:Russo One;
+}
+.rs{
+    margin-left:10px; border-radius: 10px; font-size: 30px; color:forestgreen; font-family:Russo One;
+}
+
+
+    .wave-text
+{
+    font-size: 10px;
+}
+
+.facebook
+        {
+             margin-left: 50px; text-align: center; font-size: 25px; color: gold;
+        }
+        .instagram,.Email,.linkedin,.telegram
+        {
+            margin-left: 15px; text-align: center; font-size: 25px; color: gold;
+        }
+.footer
+{
+    font-size: 15px;
+
+
+}
+
+}
+
+
+/* Tablet Screen (600px - 1024px) - Signup */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        height: auto;
+        background: mintcream;
+    }
+
+    .navbar {
+        padding: 15px;
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-top: -10px;
+        box-shadow: 0 4px 6px rgba(57, 31, 186, 0.6);
+    }
+
+    .home {
+        font-size: 30px;
+        color: gold;
+        font-weight: bold;
+    }
+
+    .home:hover {
+        font-size: 30px;
+        color: white;
+    }
+
+    
+    .option1
+    {
+        color: gold;
+    }
+    .option2 {
+        color: maroon;
+
+    }
+
+    .option1:hover {
+        color: white;
+    }
+
+    .abt {
+        background-color: firebrick;
+        padding: 25px;
+        overflow: hidden;
+        margin-left: 20px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .groove-text {
+        font-size: 40px;
+        font-weight: bold;
+        color: #ccc8c8;
+        margin-top: 10px;
+        text-align: center;
+        padding-top: 130px;
+        font-family: "Yatra One", sans-serif;
+        background: linear-gradient(to right, firebrick, maroon);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 0 2px 6px rgba(235, 82, 82, 0.5);
+    }
+
+    /* Form CSS */
+    .form-outline {
+        border-radius: 10px;
+        border: 5px solid firebrick;
+        margin-left: 120px;
+        margin-right: 120px;
+        padding-top: 55px;
+        padding-bottom: 15px;
+        background: linear-gradient(mintcream, whitesmoke);
+        box-shadow: 0 4px 8px rgba(115, 128, 183, 0.5);
+        background-color: rgba(0, 205, 0, 0.1);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        height: 35px;
+        width: 120px;
+        border-radius: 8px;
+    }
+
+    input::placeholder {
+        color: maroon;
+    }
+
+    .Namefield {
+        margin-left: 10px;
+    }
+    .abt
+    {   margin-top: 0px;
+        padding: 20px;
+        margin-left: -10px;
+    }
+
+    .layer1
+    {
+         margin-top: 180px;
+        margin-left: -10px;
+    }
+.facebook
+        {
+            margin-top: -150px; margin-left: 250px; text-align: center; font-size: 25px; color: gold;
+        }
+        .instagram,.Email,.linkedin,.telegram
+        {
+            margin-left: 30px; text-align: center; font-size: 25px; color: gold;
+        }
+.footer
+{     padding: 50px;
+    font-size: 15px;
+
+}
+}
+/*Tablet version*/

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Homepage </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Stencil+Text:wght@100&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="../CSS/hosting.css">
+
+</head>
+<body>
+  
+      <!-- Popup for "Successfully logged in" -->
+    <div id="successPopup">
+       <div id="successIcon">✓</div>
+        Successfully logged in
+    </div>
+<!-- Profile Popup -->
+<div id="profilePopup" class="popup">
+    <div class="popup-content">
+       <span class="close-btn" onclick="closeProfilePopup()">&times;</span>
+
+        <label align="center" style="color: firebrick; font-size:30px">Profile</label>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" placeholder="Enter your full name">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" placeholder="Write a short bio"></textarea>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter your location">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob">
+
+        <label for="notifications">Receive Notifications:</label>
+        <input type="checkbox" id="notifications">
+
+        <button onclick="saveProfile()">Save</button>
+    </div>
+</div>
+
+        <!-- Nav Bar Start --> 
+        <div class="navbar">
+            
+            <a class="home" onclick="toggleOptions()" style="margin-left: 20px; "><i class="fa fa-bars" aria-hidden="true "></i></a>
+            <a class="profile"  href="#" onclick="openProfilePopup()" style="margin-left: 20px; "><i class="fa fa-user-circle" aria-hidden="true "></i></a>
+          <a class="option1" href="#" onclick="confirmLogout()" style="margin-left: 10px;">Log Out</a>
+            <a class="option3" href="mailto:nagarjunaprabhuraj16@gmail.com" style=" margin-left: 10px;"><span>Contact</span></a> 
+
+       </div>
+        <!-- Nav Bar End -->
+  <div class="section1" id="section1">
+
+        <div class="theme" align="center" style=" margin-top:-10px width: 100%; height: 28% ; background-size: cover;"> 
+               <h1 class="well1" style="">Welcome to Our Website!</h1>
+            <h1 class="well2" style="color: mintcream; font-family: 'Yatra One', sans-serif; font-size: 15px; margin-top: -22px">Open the door to comfort, joy, and the sweet melody of shared stories. Here, every welcome is a promise, and every visit is a journey into the heart of hospitality. Welcome to a haven where you're not just a guest; you're part of our story.</h1>
+        </div>
+        <!-- Welcome Note Begin -->
+        <div class="welcome-container">
+            <div class="background-triangles">
+
+                <!-- JavaScript for triangle creation will be added here -->
+            </div>
+
+         
+            <img class="web1"src="../images/sign.png" width="350px" style="margin-top: 70px;  opacity: 0.9; margin: ;">
+            <p style="font-family: 'Lobster', sans-serif;">We are excited to have you here. Explore and enjoy our content.</p>
+            <a href="#about" class="scroll-btn" onclick="smoothScroll(event)">Dashboard</a>
+
+        </div>
+        <!-- Welcome Note End -->
+ </div>
+        <!-- Section 2 Begin -->
+        <div class="section2"  class="sec2" id="section2">
+            <div class="display1" class="d1" width="50%">
+                <!-- Content for section2 goes here -->
+            </div>
+            <div class="display2" class="d2" width="50%">   
+                <!-- Content for section2 goes here -->
+            </div>
+        </div>
+        <!-- Section 2 End -->
+
+        <div class="layer1" style="background: burlywood; padding: 5px;"></div>
+        <div class="layer2" style="background: brown; padding: 5px;"></div>  
+
+        <div class="abt" class="about" id="about">
+              <div class="about-section" style="">
+                
+        <p style="color:white; text-align: justify; margin-top:-10px">
+            
+Welcome User,
+
+You have successfully logged in to our platform! We're excited to have you on board. Here's a brief overview of the latest content that has been added:
+<br>
+<br>
+1. **New Features:**
+   - Explore our enhanced user interface for a more intuitive experience.
+   - Check out the updated dashboard with real-time analytics.
+<br>
+<br>
+
+2. **Recent Updates:**
+   - Stay informed about the latest news and announcements.
+   - Discover new tools and resources to enhance your experience.
+<br>
+<br>
+
+3. **Community Highlights:**
+   - Connect with other users in our vibrant community.
+   - Share your insights and experiences.
+<br>
+<br>
+Feel free to navigate through the platform and explore the added content. If you have any questions or feedback, don't hesitate to reach out to our support team.
+<br>
+<br>
+Thank you for being a valued member of our community!
+<br>
+<br>
+Best regards,
+Nexus Info Team <a href="mailto:nagarjunaprabhuraj16@gmail.com" style="text-decoration: none; color: yellow;" >Contact us </a>. Welcome aboard! Click here to <a href="login.html" style="text-decoration: none; color: yellow;" >Log Out</a>.
+</p>
+
+    </div>
+      
+  <br>
+
+<p class="footer" align="center" style="">Copyright © 2024 Prabhuraj Nagarjuna and Contact us </p>
+<a class="facebook"  style=""><i class="fa fa-facebook" aria-hidden="true "></i></a>
+<a class="instagram"  style=""><i class="fa fa-instagram" aria-hidden="true "></i></a>
+<a class="Email"  style=""><i class="fa fa-envelope" aria-hidden="true "></i></a>
+<a class="linkedin"  style=""><i class="fa fa-linkedin" aria-hidden="true "></i></a>
+<a class="telegram"  style=""><i class="fa fa-telegram" aria-hidden="true "></i></a>
+        </div>
+
+<div id="confirmationDialog">
+    <p>Are you sure you want to log out?</p>
+    <p>Automatically logging out in <span id="countdownDisplay">5</span> seconds...</p>
+    <button onclick="logout()">Yes, Logout</button>
+    <button onclick="cancelLogout()">Cancel</button>
+</div>
+
+        
+<script>
+            function smoothScroll(event) {
+                event.preventDefault();
+
+                const targetId = event.target.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+</script>
+<!-- Script for smooth scroll when get started and about me -->
+
+<script>
+            function createTriangle() {
+                const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6'];
+                const triangle = document.createElement('div');
+                triangle.className = 'triangle';
+                triangle.style.borderBottomColor = colors[Math.floor(Math.random() * colors.length)];
+                document.querySelector('.background-triangles').appendChild(triangle);
+
+                const startY = Math.random() * window.innerHeight;
+
+                triangle.style.top = startY + 'px';
+
+                const scale = Math.random() * 0.8 + 0.5; // Random size (increased)
+                triangle.style.transform = `scale(${scale})`;
+
+                const animationDuration = Math.random() * 4 + 2; // Random speed (increased)
+                triangle.style.animationDuration = `${animationDuration}s`;
+
+                function removeTriangle() {
+                    document.querySelector('.background-triangles').removeChild(triangle);
+                }
+
+                setTimeout(removeTriangle, animationDuration * 1000);
+            }
+
+            // Create triangles at regular intervals
+            setInterval(createTriangle, 1500); // Adjust interval as needed
+
+     function toggleOptions() {
+         var navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('show-options');
+     }
+
+    // // Close dropdown when clicking outside the navbar
+     document.addEventListener('click', function (event) {
+         var navbar = document.querySelector('.navbar');
+         if (!navbar.contains(event.target)) {
+             navbar.classList.remove('show-options');
+         }
+     });
+
+</script>
+<!-- Script for Triangle Linear Motion Animation  -->
+
+<script>  //For MObile Device Version  
+    // Check screen width and update "Get Started" button's href
+    window.addEventListener('DOMContentLoaded', function () {
+        const getStartedButton = document.querySelector('.scroll-btn');
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth <= 600) {
+
+            getStartedButton.onclick = null;
+        } else {
+            getStartedButton.addEventListener('click', smoothScroll);
+            getStartedButton.href = '#about';
+        }
+    });
+</script>
+
+<script>
+    function confirmLogout() {
+        var confirmationDialog = document.getElementById('confirmationDialog');
+        confirmationDialog.style.display = 'block';
+
+        var countdownDisplay = document.getElementById('countdownDisplay');
+        var count = 5;
+
+        function updateCountdown() {
+            countdownDisplay.innerText = count;
+            count--;
+
+            if (count < 0) {
+                logout();
+            } else {
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+
+        updateCountdown();
+    }
+
+    function logout() {
+        // Add any additional logout logic here
+        window.location.href = 'login.html'; // Redirect to the logout page
+    }
+
+    function cancelLogout() {
+        var confirmationDialog = document.getElementById('confirmationDialog');
+        confirmationDialog.style.display = 'none';
+    }
+</script>
+   <script>
+        // Function to show the success popup
+        function showSuccessPopup() {
+            var successPopup = document.getElementById('successPopup');
+            successPopup.style.display = 'block';
+
+            // Hide the popup after 5 seconds
+            setTimeout(function() {
+                successPopup.style.display = 'none';
+            }, 5000);
+        }
+
+        // Call the function on page load
+        window.onload = showSuccessPopup;
+    </script>
+    <script>
+ // Function to open the profile popup
+function openProfilePopup() {
+    var profilePopup = document.getElementById('profilePopup');
+    profilePopup.style.display = 'block';
+
+    // Fetch and populate existing profile data (modify this based on your needs)
+    document.getElementById('fullName').value = 'John Doe';
+    document.getElementById('username').value = 'johndoe';
+    document.getElementById('email').value = 'johndoe@example.com';
+    document.getElementById('bio').value = 'Passionate about web development.';
+    document.getElementById('location').value = 'City, Country'; // Example location
+    document.getElementById('dob').value = '1990-01-01'; // Example date of birth
+    document.getElementById('notifications').checked = true; // Example notification setting
+}
+
+// Function to save the profile changes
+function saveProfile() {
+    // Fetch the updated values
+    var fullName = document.getElementById('fullName').value;
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var bio = document.getElementById('bio').value;
+    var location = document.getElementById('location').value;
+    var dob = document.getElementById('dob').value;
+    var notifications = document.getElementById('notifications').checked;
+
+    // Add logic to save the profile changes (modify this based on your needs)
+    alert('Profile saved!\nFull Name: ' + fullName + 'Username: ' + username + 'Email: ' + email +
+          '\nBio: ' + bio + '\nLocation: ' + location + '\nDate of Birth: ' + dob +
+          '\nReceive Notifications: ' + (notifications ? 'Yes' : 'No'));
+
+    closeProfilePopup();
+}
+
+function closeProfilePopup() {
+    var profilePopup = document.getElementById('profilePopup');
+    profilePopup.style.display = 'none';
+}
+    </script>
+
+</body>
+</html>
